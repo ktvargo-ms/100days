@@ -1,0 +1,5 @@
+print("This program will calculate your BMI\n")
+height = float(input("What is your height in meters\n"))
+weight = int(input("What is your weight in kilograms\n"))
+bmi = round( (weight / (height ** 2)) ,1)
+print(f"Your BMI is {bmi}")

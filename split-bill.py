@@ -1,0 +1,8 @@
+print("Welcome to the tip generator")
+init_bill = input("What was the total bill?\n")
+num_split = input("How many people to split the bill?\n")
+tip = input("what percentage tip would you like to give? 15, 20, 25\n")
+total_bill = (round(float(init_bill) * (float(tip) / 100  + 1) , 2 ))
+print(f"Total with tip is ${total_bill}")
+per_person_amt = round( (total_bill/float(num_split)), 2)
+print(f"Each person should pay:  ${per_person_amt}")
