@@ -17,16 +17,15 @@ student_scores = {
 student_grades = {}
 
 for student in student_scores:
-    print(student_scores[student])
     score = student_scores[student]
     if score >= 91:
-        student_grades[student] = {student: "Outstanding"}
+        student_grades[student] =  "Outstanding"
     elif (score <= 91) and (score >= 81):
-        student_grades[student] = {student: "Exceeds Expectations"}
+        student_grades[student] = "Exceeds Expectations"
     elif (score <= 81) and (score >= 71):
-        student_grades[student] = {student: "Acceptable"}    
+        student_grades[student] = "Acceptable"  
     elif (score <= 70):
-        student_grades[student] = {student: "Fail"}
+        student_grades[student] = "Fail"
 
 #print out the student and their grade
 print(student_grades)
